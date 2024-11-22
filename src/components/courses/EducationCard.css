@@ -1,0 +1,191 @@
+.education-educationcard {
+    flex: 1;
+    height: auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.education-card-image {
+    height: 205px;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+    position: relative;
+}
+
+.education-bookmark:hover svg {
+    font-weight: 900;
+}
+
+.education-bookmark {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #f6f8ff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-card-content {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.education-tags {
+    display: flex;
+    gap: 8px;
+}
+
+.education-tag {
+    padding: 4px 8px;
+    border: 1px solid #293349;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #293349;
+}
+
+.education-details {
+    display: flex;
+    gap: 16px;
+}
+
+.education-detail {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #1d1d1d;
+}
+
+.education-title-h3 {
+    font-size: 20px;
+    color: #1d1d1d;
+    margin-top: auto;
+
+}
+
+.education-description p {
+    font-size: 16px;
+    color: #878787;
+}
+
+.education-instructor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.education-instructor span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+}
+
+.education-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #d8d8d8;
+}
+
+.education-card-footer {
+    display: flex;
+    justify-content: center;
+    /* Yatayda ortalama */
+    align-items: center;
+    /* Dikeyde ortalama */
+    margin-top: auto;
+    /* Kartın alt kısmında yer alması için */
+}
+
+.button-incele {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 52px;
+
+    width: 148px;
+    min-width: 64px;
+    height: 32px;
+
+    background: #00C26D;
+    /* Primary Green */
+    border: none;
+    /* Kenarlık yok */
+    border-radius: 4px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* 150% */
+    text-align: center;
+    color: #FFFFFF;
+    /* Beyaz metin */
+
+    cursor: pointer;
+    /* Tıklanabilir imleç */
+    transition: background-color 0.3s ease;
+    /* Hover efekti için geçiş */
+}
+
+.button-incele:hover {
+    background-color: #00A85B;
+    /* Hover'da daha koyu yeşil */
+
+}
+
+.education-card-footer a {
+    text-decoration: none;
+    /* Hover'da daha koyu yeşil */
+}
+
+.education-card-divider {
+    width: 100%;
+    /* Kart genişliğine uyum sağlar */
+    height: 1px;
+    /* Çizgi yüksekliği */
+    border: none;
+    /* Varsayılan tarayıcı kenarlığını kaldır */
+    background: linear-gradient(to right, rgba(216, 216, 216, 0), #D8D8D8, rgba(216, 216, 216, 0));
+    /* Silikleşen çizgi */
+    margin: 8px 0;
+    /* Üst ve alt boşluk */
+    align-self: stretch;
+    /* Genişliği kapsayıcıya göre ayarlar */
+    flex-grow: 0;
+    /* Esnemeyi devre dışı bırakır */
+}
+
+.education-profile-pic {
+    width: 40px;
+    height: 40px;
+
+    /* Arka plan resmi */
+    background-size: cover;
+    /* Resmi kapsar */
+    background-position: center;
+    /* Resmi ortalar */
+    background-repeat: no-repeat;
+    /* Tekrarlamayı önler */
+
+    /* Yuvarlak görünüm */
+    border-radius: 50%;
+    /* Tamamen yuvarlak yapmak için */
+    border: 2px solid #ddd;
+    /* İsteğe bağlı kenarlık */
+}

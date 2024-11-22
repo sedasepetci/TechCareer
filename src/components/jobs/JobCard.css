@@ -1,0 +1,129 @@
+.jobCard-job-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 16px;
+    flex: 1;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+}
+
+.jobCard-job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.jobCard-job-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1D1D1D;
+}
+
+.jobCard-bookmark-button {
+    background: #F6F8FF;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.jobCard-job-company {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.jobCard-company-logo {
+    width: 56px;
+    height: 56px;
+}
+
+.jobCard-jobCard-divider {
+    width: 100%;
+    border: 1px solid #D8D8D8;
+}
+
+/* job-details container */
+.jobCard-job-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 4px;
+    width: 288px;
+    height: auto;
+}
+
+/* Individual detail item */
+.jobCard-detail-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    /* İkon ile yazı arasındaki boşluğu ayarladık */
+    width: 288px;
+    height: 18px;
+}
+
+/* Icons */
+.jobCard-icon {
+    width: 18px;
+    height: 18px;
+    background: #878787;
+    border-radius: 50%;
+}
+
+/* Detail text */
+.jobCard-detail-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #878787;
+    margin: 0;
+}
+
+/* View button */
+.jobCard-view-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 52px;
+    width: 175px;
+    min-width: 64px;
+    height: 32px;
+    background: #00C26D;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.jobCard-view-button:hover {
+    background-color: #00A85B;
+    /* Hover'da daha koyu yeşil */
+
+}
+
+.jobCard-viewLink {
+    text-decoration: none;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.communityneler-communityNelerYaptikContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 150px;
+    background-color: #EFFFEB;
+
+}
+
+.communityneler-nelerYaptikTitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 42.16px;
+    color: #1D1D1D;
+    margin-bottom: 30px;
+
+}
+
+.communityneler-cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.communityneler-card {
+    background-color: #F6F8FF;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.communityneler-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    border-bottom: 10px solid #00B666;
+    border-radius: 0 0 50% 50%;
+    box-sizing: border-box;
+}
+
+.communityneler-cardImage {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.communityneler-cardCount {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #00C26D;
+}
+
+.communityneler-cardText {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1D1D1D;
+}
+
+@media (max-width: 1024px) {
+    .communityneler-communityNelerYaptikContainer {
+        padding: 32px 50px;
+    }
+
+    .communityneler-nelerYaptikTitle {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .communityneler-card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .communityneler-cardImage {
+        width: 100px;
+        height: 70px;
+    }
+
+    .communityneler-cardCount,
+    .communityneler-cardText {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Mobil Ekranlar (768px altı) */
+@media (max-width: 768px) {
+    .communityneler-communityNelerYaptikContainer {
+        padding: 16px;
+    }
+
+    .communityneler-nelerYaptikTitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .communityneler-card {
+        width: 130px;
+        height: 130px;
+    }
+
+    .communityneler-cardImage {
+        width: 80px;
+        height: 60px;
+    }
+
+    .communityneler-cardCount,
+    .communityneler-cardText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/* Küçük Mobil Ekranlar (480px altı) */
+@media (max-width: 480px) {
+    .communityneler-nelerYaptikTitle {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .communityneler-card {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .communityneler-cardImage {
+        width: 60px;
+        height: 40px;
+    }
+
+    .communityneler-cardCount,
+    .communityneler-cardText {
+        font-size: 12px;
+        line-height: 16px;
+
+    }
+}

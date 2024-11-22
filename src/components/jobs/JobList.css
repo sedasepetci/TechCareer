@@ -1,0 +1,117 @@
+.job-list-header h2 {
+    width: 1024px;
+    /* Genişlik 1024px */
+    height: 56px;
+    /* Yükseklik 56px */
+
+    /* Heading 3 Font */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 117%;
+    /* Veya 56px */
+
+    /* Renk ve Yazı Tipi */
+    color: #1D1D1D;
+
+    /* Auto Layout ve Flex özellikleri */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    /* Genişliğe göre yayılma */
+    flex-grow: 0;
+    /* Flex büyümesi yok */
+
+    text-align: left;
+    /* Başlık ortalanacak şekilde hizalanacak */
+}
+
+/* Container Stili (job-list-container) */
+.jobList-container {
+    width: 1024px;
+    /* Yatayda ortalanacak */
+    margin: 0 auto;
+    /* Sayfa genişliğinde ortalamayı sağlamak için */
+    opacity: 1;
+    /* Görünür olacak */
+}
+
+.job-list-inner {
+    gap: 32px;
+    /* İçerikler arasında 32px boşluk */
+    display: flex;
+    flex-direction: column;
+    /* İçerikler dikey sırada olacak */
+    justify-content: flex-start;
+    /* Dikeyde baştan başlayacak */
+    align-items: center;
+}
+
+.job-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Yüzde yüz genişlik, başlıkla hizalanması için */
+}
+
+.all-jobs-button {
+    /* Box-sizing */
+    box-sizing: border-box;
+    text-decoration: none;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+
+    /* Genişlik ve Yükseklik */
+    width: 142px;
+    height: 40px;
+    /* Sabit yükseklik */
+    min-width: 64px;
+    /* Minimum genişlik */
+    max-width: 100%;
+    /* Gerektiğinde genişlemeye izin verir */
+
+    /* Arka plan beyaz ve border yazı rengi ile aynı */
+    background: #FFFFFF;
+    border: 1px solid #00C26D;
+    /* Çizgi rengini yazı rengiyle aynı yapıyoruz */
+    border-radius: 4px;
+
+    /* Text Stili */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* 24px satır yüksekliği */
+    text-align: center;
+    color: #00C26D;
+    /* Text Rengi */
+
+    /* Auto Layout ve Flex özellikleri */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    /* Taşmayı engeller */
+    white-space: nowrap;
+    overflow: hidden;
+
+    /* Hover geçişi */
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover efekti */
+.all-jobs-button:hover {
+    background: #00C26D;
+    /* Arka plan yeşil */
+    color: #FFFFFF;
+    /* Yazı beyaz */
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.tech-teknikSozlukContainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 28px 208px;
+}
+
+.tech-contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-img {
+    width: 300px;
+    height: 300px;
+}
+
+.tech-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #00B666;
+    line-height: 56.16px;
+    margin: 20px;
+}
+
+.tech-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #1D1D1D;
+    text-align: center;
+    line-height: 42.16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .tech-teknikSozlukContainer {
+        flex-direction: column;
+        /* Elemanları üst üste diz */
+        padding: 20px;
+        /* Daha küçük padding */
+    }
+
+    .tech-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .tech-title {
+        font-size: 36px;
+        /* Daha küçük başlık boyutu */
+        line-height: 42px;
+    }
+
+    .tech-text {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-teknikSozlukContainer {
+        padding: 16px;
+        /* Daha dar ekranlar için padding */
+        gap: 15px;
+        /* Elemanlar arasındaki boşluğu küçült */
+    }
+
+    .tech-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tech-title {
+        font-size: 28px;
+        /* Daha küçük başlık */
+        line-height: 34px;
+    }
+
+    .tech-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-teknikSozlukContainer {
+        padding: 10px;
+        /* Mobil ekranlar için minimal padding */
+    }
+
+    .tech-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tech-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .tech-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

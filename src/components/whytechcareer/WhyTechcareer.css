@@ -1,0 +1,163 @@
+/* Genel Alan */
+.whytech-cards-section {
+  width: 1500px;
+  /* Genişlik */
+  height: 425px;
+  /* Yükseklik */
+  padding: 40px;
+  background-color: #f8f9fa;
+  text-align: left;
+  /* Başlık sola hizalanacak */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* İçeriği dikeyde ortalar */
+  margin: 0 auto;
+  /* Sayfa ortasında yer alması için */
+}
+
+/* Başlık: Neden Techcareer.net? */
+.whytech-section-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 117%;
+  /* or 56px */
+  color: #1d1d1d;
+  margin: 0px 0px 40px 0px;
+  /* Ortalamak için margin ayarı */
+}
+
+/* Kartlar Alanı */
+.whytech-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  /* Kartlar arası mesafe */
+  margin-top: 40px;
+  /* Üst boşluk ekleyelim */
+}
+
+/* Tekil Kart */
+.whytech-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 318px;
+  height: 260px;
+  background-color: #00c26d;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  position: relative;
+  /* İkonları üst köşede hizalamak için */
+}
+
+/* Kartın İçeriği */
+.whytech-card-content-whytech {
+  text-align: center;
+  padding: 24px;
+}
+
+.whytech-card-title {
+  width: 270px;
+  /* Genişlik */
+  height: 32px;
+  /* Yükseklik */
+
+  /* Heading 5 M */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 134%;
+  /* %134 satır yüksekliği */
+  text-align: center;
+  /* Başlık ortalanacak */
+
+  /* White Text */
+  color: #ffffff;
+  /* Beyaz renk */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-top: 50px;
+}
+
+.whytech-card-description {
+  width: 270px;
+  /* Genişlik */
+  height: 96px;
+  /* Yükseklik */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* veya 24px */
+  color: #ffffff;
+  /* Beyaz metin */
+  text-align: left;
+  /* Metni sola hizalayacak */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-top: 16px;
+  /* Açıklamanın başlığına olan boşluğunu artırmak için */
+}
+
+/* "Techcareer" için Yeşil Stil */
+.whytech-section-title .highlight {
+  color: #00c26d;
+  /* Yeşil Renk */
+}
+
+/* Kartın Üst Kısmındaki İkon */
+.whytech-card-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* Kartın üst kısmında konumlandırmak için */
+  top: 0;
+  /* Üstte hizalanacak */
+  left: 50%;
+  /* Ortalanacak */
+  transform: translateX(-50%);
+  /* Yatayda tam ortalama */
+  width: 106px;
+  /* İkon kapsayıcı genişliği */
+  height: 106px;
+  /* İkon kapsayıcı yüksekliği */
+  padding: 0px;
+  /* Padding'i sıfırladım */
+  gap: 0px;
+  /* Kart içindeki öğeler arasında boşluk yok */
+  border-radius: 200px;
+  /* Yuvarlak köşeler */
+  background-color: #ffffff;
+  /* Beyaz arka plan */
+  margin-top: -50px;
+  /* Kartın üst kısmına daha yakın olacak şekilde */
+}
+
+.whytech-card-icon {
+  width: 106px;
+  /* İkon genişliği */
+  height: 106px;
+  /* İkon yüksekliği */
+  border-radius: 200px;
+  /* Yuvarlak ikon */
+  background-size: cover;
+  /* Resmi kapsayıcıya göre boyutlandır */
+  flex: none;
+  align-self: stretch;
+  flex-grow: 1;
+}

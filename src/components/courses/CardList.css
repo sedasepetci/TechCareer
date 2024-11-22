@@ -1,0 +1,58 @@
+.cardlist-container {
+    width: 1024px;
+    /* Yatayda ortalanacak */
+    margin: 0 auto;
+    /* Sayfa genişliğinde ortalamayı sağlamak için */
+    opacity: 1;
+    /* Görünür olacak */
+}
+
+.cardlist-card-list-inner {
+    gap: 32px;
+    /* İçerikler arasında 32px boşluk */
+    display: flex;
+    flex-direction: column;
+    /* İçerikler dikey sırada olacak */
+    justify-content: flex-start;
+    /* Dikeyde baştan başlayacak */
+    align-items: center;
+
+}
+
+.cardlist-card-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Yüzde yüz genişlik, başlıkla hizalanması için */
+}
+
+.card-list-header h2 {
+    width: 1024px;
+    /* Genişlik 1024px */
+    height: 56px;
+    /* Yükseklik 56px */
+
+    /* Heading 3 Font */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 117%;
+    /* Veya 56px */
+
+    /* Renk ve Yazı Tipi */
+    color: #1D1D1D;
+
+    /* Auto Layout ve Flex özellikleri */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    /* Genişliğe göre yayılma */
+    flex-grow: 0;
+    /* Flex büyümesi yok */
+
+    text-align: left;
+    /* Başlık ortalanacak şekilde hizalanacak */
+}

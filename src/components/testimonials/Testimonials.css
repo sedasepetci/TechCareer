@@ -1,0 +1,656 @@
+/* En dıştaki Layout */
+.testimonial-fixed-layout {
+  position: relative;
+  /* Konumlandırma */
+
+  margin: 0px auto;
+  height: 390px;
+  /* Figma'dan alınan yükseklik */
+  padding: 28px 208px;
+  /* İçerik çevresi boşluk */
+  background-color: #fafafa;
+  /* Arka plan rengi */
+  scrollbar-width: none;
+  /* Firefox için scrollbar'ı tamamen gizler */
+  -ms-overflow-style: none;
+  /* IE 10+ için scrollbar'ı gizler */
+  display: flex;
+  /* Flexbox kullanımı *
+  /* İçeriği dikey hizala */
+  justify-content: center;
+  /* İçeriği dikeyde ortala */
+  align-items: center;
+  /* İçeriği yatayda ortala */
+  overflow-y: auto;
+  /* Dikey kaydırmayı etkinleştirir */
+  scrollbar-gutter: stable;
+  /* Scrollbar sabit kalsın */
+  gap: 36px;
+  /* Elemanlar arası boşluk */
+  isolation: isolate;
+  /* İzolasyon, overlay elemanları için */
+}
+
+.testimonial-fixed-layout::-webkit-scrollbar {
+  display: none;
+  /* WebKit tabanlı tarayıcılar için scrollbar'ı gizler */
+}
+
+/* Tüm scrollable alanlar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 80px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d8d8d8;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #878787;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00c26d;
+}
+
+/* Text Layout */
+.testimonial-text-layout {
+  width: 1024px;
+  /* Genişlik */
+  height: 42px;
+  /* Yükseklik */
+  display: flex;
+  justify-content: flex-start;
+  /* Yatayda ortalama */
+  align-items: center;
+  /* Dikeyde ortalama */
+  gap: 36px;
+}
+
+.testimonial-text-body {
+  width: 286px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1d1d1d;
+  line-height: 150%;
+  margin: 0;
+  text-align: left;
+  margin-top: 8px;
+  margin-left: -30px;
+  padding-left: 0;
+  opacity: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* Görünür satır sayısı */
+  -webkit-box-orient: vertical;
+  max-height: 77px;
+  /* Yükseklik sabitlendi */
+  overflow-y: auto;
+  /* Yalnızca dikey kaydırma */
+  padding-right: 26px;
+  /* Scrollbar ile metin arasında boşluk bırak */
+}
+
+.testimonial-text-layout h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  /* Başlık rengi */
+  text-align: left;
+  line-height: 1.4;
+  /* Satır yüksekliği */
+  margin: 0;
+}
+
+/* İç Layout */
+.testimonial-layout {
+  width: 1024px;
+  /* Figma'dan gelen genişlik */
+  height: 250px;
+  /* Figma'dan gelen yükseklik */
+  display: flex;
+  /* Flexbox düzeni */
+  flex-direction: column;
+  /* İçeriği dikey hizala */
+  margin: 0 auto;
+  /* Ortalamak için */
+  align-items: flex-start;
+  /* İçeriği sola hizala */
+  padding: 0px;
+  /* Kenar boşluğu yok */
+  gap: 36px;
+  /* Elemanlar arası boşluk */
+  background-color: #fafafa;
+  /* Arka plan rengi */
+
+  /* Figma auto-layout özellikleri */
+  flex: none;
+  /* İçeriğin esnemesini engelle */
+  order: 0;
+  /* Varsayılan sıralama */
+  align-self: stretch;
+  /* Stretch özelliği */
+  flex-grow: 0;
+  /* Esnemeyi devre dışı bırak */
+}
+
+/* Buton için text stili ekleyin */
+.testimonial-button-tertiary {
+  width: 183px;
+  height: 48px;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #00c26d;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  /* Text stili */
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  /* Hover efekti */
+  transition: background-color 0.3s ease;
+}
+
+.testimonial-button-tertiary:hover {
+  background: #00a85d;
+}
+
+/* İç Frame - Text Layout Container */
+.testimonial-frame {
+  width: 1024px;
+  /* Figma'dan alınan genişlik */
+  height: 334px;
+  /* Figma'dan alınan yükseklik */
+  display: flex;
+  /* Flexbox düzeni */
+  flex-direction: column;
+  /* İçeriği dikey hizala */
+  align-items: center;
+  /* İçeriği yatayda ortala */
+  justify-content: space-between;
+  /* İçeriği dikeyde dağıt */
+  padding: 0px;
+  /* Kenar boşluğu yok */
+  gap: 36px;
+  /* Elemanlar arası boşluk */
+
+  position: relative;
+  /* Konumlandırma için gerekli */
+  z-index: 0;
+  /* Katman sırası */
+
+  /* Figma auto-layout özellikleri */
+  flex: none;
+  /* İçeriğin esnemesini engelle */
+  order: 0;
+  /* Varsayılan sıralama */
+  align-self: stretch;
+  /* Stretch özelliği */
+  flex-grow: 0;
+  /* Esnemeyi devre dışı bırak */
+}
+
+.testimonial-card-container {
+  height: 172px;
+  /* Figma'dan alınan yükseklik */
+  display: flex;
+  /* Flexbox düzeni */
+  flex-direction: row;
+  /* İçeriği yatay hizala */
+  justify-content: center;
+  /* İçeriği ortala */
+  align-items: center;
+  /* İçeriği dikeyde ortala */
+  padding: 0px;
+  /* Kenar boşluğu yok */
+  gap: 12px;
+  /* Kartlar arası boşluk, Figma'dan gelen 12px */
+  position: relative;
+  /* Butonun doğru konumlanması için gerekli */
+  display: flex;
+  scroll-snap-type: x mandatory;
+  /* Yatay kaydırma için */
+
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  /* Figma auto-layout özellikleri */
+  flex: none;
+  /* İçeriğin esnemesini engelle */
+  order: 1;
+  /* Varsayılan sıralama */
+  align-self: stretch;
+  /* Stretch özelliği */
+  flex-grow: 0;
+  /* Esnemeyi devre dışı bırak */
+}
+
+.testimonial-card-with-circle {
+  display: flex;
+  /* Flexbox düzeni */
+  flex-direction: row;
+  /* İçeriği yatay hizala */
+  align-items: flex-start;
+  /* İçeriği üst kısma hizala */
+  padding: 0px;
+  /* Kenar boşluğu yok */
+  gap: 16px;
+  /* Elemanlar arası boşluk, Figma'dan gelen 16px */
+
+  width: 510px;
+  /* Figma'dan alınan genişlik */
+  height: 172px;
+  /* Figma'dan alınan yükseklik */
+
+  /* Auto-layout özellikleri */
+  flex: none;
+  /* İçeriğin esnemesini engelle */
+  order: 0;
+  /* Varsayılan sıralama */
+  flex-grow: 0;
+  /* Esnemeyi devre dışı bırak */
+
+  flex-shrink: 0;
+
+  justify-content: center;
+}
+
+.testimonial-circle {
+  width: 140px;
+  /* Figma'dan alınan genişlik */
+  height: 140px;
+  /* Figma'dan alınan yükseklik */
+  border-radius: 50%;
+  /* Daire şeklinde yapmak için */
+  background: #00c26d;
+  /* Figma'dan alınan yeşil arka plan rengi */
+
+  /* Figma'dan alınan çerçeve özellikleri */
+  border: 10px solid #00c26d;
+  /* Çerçeve rengi ve kalınlığı */
+
+  overflow: hidden;
+  /* İçeriğin taşmasını engeller */
+
+  /* Flexbox ile içeriği ortalama */
+  display: flex;
+  justify-content: center;
+  /* Yatayda ortala */
+  align-items: center;
+  /* Dikeyde ortala */
+
+  /* Auto-layout özellikleri */
+  flex: none;
+  /* Esnemez */
+  order: 0;
+  /* Varsayılan sıralama */
+  flex-grow: 0;
+  /* Esnemez */
+
+  /* Box sizing: border-box */
+  box-sizing: border-box;
+  /* Border ve padding dahil edildi */
+}
+
+.testimonial-card-layout {
+  width: 354px;
+  /* Figma'dan alınan genişlik */
+  height: 172px;
+  /* Figma'dan alınan yükseklik */
+  display: flex;
+  /* Flexbox düzeni */
+  flex-direction: row;
+  /* İçeriği yatayda hizala */
+  align-items: flex-start;
+  /* İçeriği yukarı hizala */
+  padding: 0px;
+  /* Kenar boşluğu yok */
+  overflow: hidden;
+  /* İçeriğin taşmasını engelle */
+  /* Auto-layout özellikleri */
+  flex: none;
+  /* Esnemez */
+  order: 1;
+  /* Varsayılan sıralama */
+  flex-grow: 0;
+  /* Esnemez */
+}
+
+.testimonial-card-content {
+  flex-direction: column;
+  align-items: flex-start;
+  /* İçeriği sola hizala */
+  justify-content: flex-start;
+  /* İçeriği yukarı hizala */
+  width: 306px;
+  /* Figma'dan alınan kart genişliği */
+  height: 124px;
+  /* Figma'dan alınan kart yüksekliği */
+  background: #efffeb;
+  /* Arka plan rengi */
+  border-radius: 0px 16px 16px 16px;
+  box-sizing: border-box;
+  /* Padding ve border'ı içerik alanına dahil et */
+  margin: 0;
+  /* Taşmayı engelle */
+}
+
+.testimonial-icon-container {
+  display: flex;
+  /* Icon için flex düzeni */
+  align-items: center;
+  /* Icon'u dikeyde ortala */
+  justify-content: flex-start;
+  /* Icon'u sola hizala */
+  width: 100%;
+  /* Icon container'ın tam genişlikte olmasını sağlar */
+  margin-bottom: 8px;
+  /* Icon ile metin arasına boşluk */
+
+  overflow-x: scroll;
+  /* Yatay kaydırmayı aktif et */
+  cursor: grab;
+  /* Fare işaretçisi kaydırmaya uygun hale gelir */
+  scroll-behavior: smooth;
+  /* Yumuşak kaydırma */
+}
+
+.testimonial-card-container:active {
+  cursor: grabbing;
+  /* Fareyi tutarken "grabbing" işaretçisi */
+}
+
+.testimonial-circle img {
+  width: 100%;
+  /* Görsel genişliğini daireye uydur */
+  height: 100%;
+  /* Görsel yüksekliğini daireye uydur */
+  object-fit: cover;
+  /* Görseli keserek daireye tam oturt */
+}
+
+.testimonial-card {
+  flex-direction: column;
+  /* İçeriği dikey hizala */
+  align-items: flex-start;
+  /* İçeriği sola hizala */
+  padding: 24px 16px 24px 48px;
+  /* İkonun hizasında boşluk bırak */
+  width: 338px;
+  /* Kart genişliği */
+  height: 172px;
+  /* Kart yüksekliği */
+  background: #efffeb;
+  /* Arka plan rengi (Green 900 rengi) */
+  border-radius: 0px 16px 16px 16px;
+  /* Yuvarlatılmış köşeler */
+  position: relative;
+  /* İkon için sabit yerleşim */
+  overflow: visible;
+  /* Kartın dışındaki üçgeni göstermek için */
+  margin-left: 10px;
+  /* Kartlar arasında boşluk */
+  border: none;
+  /* Çerçeve yok */
+  box-sizing: border-box;
+  /* Padding ve border'ı width ve height'a dahil et */
+}
+
+.testimonial-card-layout2 {
+  display: flex;
+  /* Flexbox düzeni */
+  flex-direction: row;
+  /* İçeriği yatay hizala */
+  align-items: center;
+  /* İçeriği dikeyde ortala */
+  padding: 0px;
+  /* Kenar boşluğu yok */
+  gap: 8px;
+  /* Elemanlar arasındaki boşluk */
+
+  width: 306px;
+  /* Figma'dan alınan genişlik */
+  height: 124px;
+  /* Figma'dan alınan yükseklik */
+
+  /* Inside Auto layout */
+  flex: none;
+  /* Esnemez */
+  order: 0;
+  /* Varsayılan sıralama */
+  align-self: stretch;
+  /* Yayılsın */
+  flex-grow: 0;
+  /* Esnemez */
+}
+
+.testimonial-card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1d1d;
+  margin-bottom: 4px;
+}
+
+.testimonial-card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #1d1d1d;
+  line-height: 150%;
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* Üçgeni kartın ortasına dikeyde hizalar */
+  left: -16px;
+  /* Üçgeni kartın sol dışına yerleştirir (Kartın dışına çıkmasını sağlar) */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 16px 0 0;
+  /* Üçgenin boyutları */
+  border-color: #efffeb transparent transparent transparent;
+  /* Üçgen rengi */
+  transform: translateY(-540%) rotate(90deg);
+  /* Üçgeni dışarıya doğru döndürür */
+}
+
+/* Icon / Double Quotes */
+.testimonial-icon-quotes {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #efffeb;
+}
+
+/* Alt bilgi stili */
+.testimonial-card-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonial-text-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #00c26d;
+}
+
+/* Yeni Buton */
+.testimonial-card-button {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+  /* Konumlandırma */
+  position: absolute;
+  width: 44px;
+  height: 44px;
+
+  /* Yatayda butonu Card'ın sol kısmına hizalıyoruz */
+  left: -22px;
+  /* Butonun yarısı dışarıda olacak şekilde */
+  top: 50%;
+  /* Ortaya hizalamak için */
+  transform: translateY(-50%);
+  /* Gerçekten ortalamak için */
+
+  /* Tertiary Background - Gray 900 */
+  background: #fafafa;
+
+  /* Primary Stroke - Gray 500 */
+  border: 1px solid #d8d8d8;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+  /* Tıklanabilir işaretçi */
+  cursor: pointer;
+}
+
+/* Hover efekti */
+.testimonial-card-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tıklama efekti */
+.testimonial-card-button:active {
+  background-color: #e0e0e0;
+}
+
+.testimonial-card-button-left {
+  position: absolute;
+  top: 50%;
+  /* Dikeyde ortalama */
+  left: -22px;
+  /* Sol kenarın dışına taşma */
+  transform: translateY(-50%);
+  /* Gerçek ortalama */
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #d8d8d8;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.testimonial-card-button-right {
+  position: absolute;
+  top: 50%;
+  /* Dikeyde ortalama */
+  right: -35px;
+  /* Sağ kenarın dışına taşma */
+  transform: translateY(-50%);
+  /* Gerçek ortalama */
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #d8d8d8;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Hover ve aktif durumlar */
+.testimonial-card-button-left:hover,
+.testimonial-card-button-right:hover {
+  background-color: #f1f1f1;
+}
+
+.testimonial-card-button-left:active,
+.testimonial-card-button-right:active {
+  background-color: #e0e0e0;
+}
+
+.testimonial-fixed-layout {
+  overflow-y: auto;
+  /* Dikey kaydırmayı etkinleştirir */
+  scrollbar-gutter: stable;
+  /* Scrollbar sabit kalsın */
+  height: 390px;
+  /* Scrollbar'ın çalışacağı alan */
+}
+
+.testimonial-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-slider {
+  display: flex;
+  gap: 16px;
+  /* Kartlar arası boşluk */
+  cursor: grab;
+  overflow-x: scroll;
+  /* Yatay kaydırmayı etkinleştir */
+  scroll-behavior: smooth;
+}
+
+.testimonial-slider-container {
+  overflow-x: auto;
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-slider-card {
+  flex: 0 0 300px;
+  /* Kart genişliği */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  /* Hover animasyonu */
+}
+
+.testimonial-slider-card:hover {
+  transform: scale(1.05);
+  /* Kart üzerine gelince büyütme */
+}
+
+.testimonial-slider-content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-slider-item {
+  min-width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
